@@ -1,0 +1,24 @@
+
+@font-face {
+    font-family: Ranger;
+    src:
+        local("Ranger"),
+        url(../font/RANGER.otf),
+        url(../font/RANGER.otf) format("otf");
+}
+
+@font-face {
+    font-family: Hacker;
+    src:
+        local("Hacker"),
+        url(../font/Hacked-KerX.ttf),
+        url(../font/Hacked-KerX.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: Horizon;
+    src:
+        local("Horizon"),
+        url(../font/Horizon.otf),
+        url(../font/Horizon.otf) format("otf");
+}
