@@ -21,19 +21,24 @@
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
-    height: 100vh;
-    background: url("https://wallpaperaccess.com/full/869923.gif") no-repeat;
-    background-size: 100% 100%;
+    /* height: 100vh; */
+    color: #fff;
     font-family: Ranger;
-    z-index: -10;
+    background: rgb(7, 15, 20) url("https://wallpaperaccess.com/full/869923.gif") no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
+
 
 .container {
     position: relative;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    /* background: #000 url("https://wallpaperaccess.com/full/869923.gif") no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed; */
     /* background-color: aquamarine; */
 }
 
@@ -144,6 +149,8 @@ body {
     -webkit-background-clip: text;
 }
 
+/* =============== FOOTER =============== */
+
 footer {
     position: fixed;
     bottom: 0;
@@ -189,17 +196,140 @@ footer section .wrap_content .link_list ul li a:hover{
     transform: translateX(10px);
 }
 
+/* =============== ABOUT =============== */
+
+.middle_line_sm {
+    margin: 1rem auto;
+    width: 200px;
+    height: 5px;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0), rgb(39, 248, 255), rgba(0, 0, 0, 0));
+    border-radius: 1rem;
+}
+
+.container .about_main_page {
+    padding: 1.5em;
+}
+.container .about_main_page .back_home_btn {
+    position: fixed;
+    float: left;
+    top: 1.5em;
+    left: 1.5em;
+    z-index: 10;
+}
+.container .about_main_page .back_home_btn a{
+    display: block;
+    padding: .5rem 1.2rem;
+    color: white;
+    font-family: Horizon;
+    background: linear-gradient(10deg, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15));
+    border-radius: 1.5rem;
+    /* border: 2px solid rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(3px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    transition: var(--transition-text-fast);
+}
+.container .about_main_page .back_home_btn a:hover {
+    color: #25ffe2;
+    text-shadow: 0 0 20px  rgba(225, 225, 255, 0.75);
+    /* border: 2px solid rgba(225, 225, 225, 0.50); */
+    /* box-shadow: 0 0 5px rgba(56, 199, 255, 0.25); */
+}
+
+.container .box_section_about {
+    margin-top: 4em;
+    padding: 1rem;
+    /* height: 1000vh; */
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(7, 15, 20, 0.25);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+}
+
+.container .box_section_about .box_wrap {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    width: 100%;
+}
+
+.container .box_section_about .box_wrap .header_intro{
+    margin: auto;
+    width: 75%;
+    display: flex;
+    gap: 1rem;
+}
+.container .box_section_about .box_wrap .header_intro .introduce_text_box{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+    /* background-color: #000; */
+}
+.container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box h1{
+    color: white;
+    font-size: 1.8rem;
+    /* text-wrap: nowrap; */
+    /* font-family: ; */
+}
+.container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box .name_color {
+    color: red;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+.container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box p{
+    margin-top: .5rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1rem
+    /* font-family: ; */
+}
+
+/* -----  image ----- */
+.container .box_section_about .box_wrap .cover_image_box{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.container .box_section_about .box_wrap .cover_image{
+    width: 300px;
+    height: 300px;
+    background: url("https://static.vecteezy.com/system/resources/previews/004/463/621/non_2x/abstract-colorful-ornament-doodle-art-tiger-illustration-cartoon-concept-suitable-for-wallpaper-clip-art-background-card-book-illustration-t-shirt-design-sticker-cover-etc-vector.jpg") no-repeat;
+    background-size: 100% 100%;
+    border-radius: 1rem;
+    border: 3px solid white;
+}
+
+/* =============== PROJECT =============== */
+.container .box_section_about .box_wrap .header__pj {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .box_section_about .box_wrap .header__pj .qr_code {
+    margin-bottom: 3rem;
+    width: 300px;
+}
+
+.container .box_section_about .box_wrap .header__pj .qr_code img{
+    margin-bottom: 3rem;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+
+
 /* ---------- RESPORNSIVE ---------- */
 
 @media only screen and (max-width: 900px) {
-    body {
-        width: 100%;
-        height: 100vh;
-        background: url("https://wallpaperaccess.com/full/869923.gif") no-repeat center;
-        background-size: cover;
-        font-family: Ranger;
-    }
 
+    body {
+        background-position: center;
+        background-size: cover contain;
+    }
+    
     .container header {
         top: 50%;
         left: 40%;
@@ -210,5 +340,37 @@ footer section .wrap_content .link_list ul li a:hover{
 @media only screen and (max-width: 580px) {
     .container .main_page .text_header{
         margin-top: 3em;
+    }
+
+    /* =============== ABOUT =============== */
+    .container .box_section_about .box_wrap .cover_image{
+        width: 150px;
+        height: 150px;
+    }
+    .container .box_section_about .box_wrap .header_intro{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container .box_section_about .box_wrap .header_intro .introduce_text_box{
+        width: 100%;
+        margin-top: 0;
+    }
+    .container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box .name_color {
+        text-align: center;
+    }
+    .container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box p{
+        text-align: center;
+    }
+
+    /* ----- image ----- */
+    .container .box_section_about .box_wrap .cover_image_box{
+       margin-top: 2rem;
+    }
+
+    /* =============== PROJECT =============== */
+    .container .box_section_about .box_wrap .header__pj .qr_code {
+        margin-bottom: 3rem;
+        width: 100%;
     }
 }
