@@ -21,6 +21,7 @@
 }
 
 body {
+    overflow: hidden;
     width: 100%;
     height: 100vh;
     background: url("https://wallpaperaccess.com/full/869923.gif") no-repeat;
@@ -112,6 +113,7 @@ body {
 
 .container .main_page {
     width: 100%;
+    height: 100%;
 }
 .container .main_page .text_header{
     width: 100%;
@@ -187,6 +189,7 @@ footer section .wrap_content .link_list ul li a:hover{
     transform: translateX(10px);
 }
 
+/* ---------- RESPORNSIVE ---------- */
 
 @media only screen and (max-width: 900px) {
     body {
@@ -201,5 +204,11 @@ footer section .wrap_content .link_list ul li a:hover{
         top: 50%;
         left: 40%;
         transform: translate(0, -50%);
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .container .main_page .text_header{
+        margin-top: 3em;
     }
 }
