@@ -1,5 +1,2 @@
-## scifi
-sci-fi web
-
-# DEMO
-site: https://chhengz.github.io/scifi
+## DEMO
+site: https://sokchheng.site
