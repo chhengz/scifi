@@ -26,7 +26,7 @@ body {
     /* height: 100vh; */
     color: #fff;
     font-family: Ranger;
-    background: rgb(7, 15, 20) url("https://wallpaperaccess.com/full/869923.gif") no-repeat;
+    background: rgb(7, 15, 20) url("https://wallpaperaccess.com/full/869923.gif") center no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
 }
@@ -338,6 +338,10 @@ footer section .wrap_content .link_list ul li a:hover{
 }
 
 @media only screen and (max-width: 580px) {
+    body {
+        background-position: center;
+        background-size: 200% 100%;
+    }
     .container .main_page .text_header{
         margin-top: 3em;
     }
@@ -369,6 +373,9 @@ footer section .wrap_content .link_list ul li a:hover{
     }
 
     /* =============== PROJECT =============== */
+    .container .box_section_about .box_wrap .header__pj {
+        padding: 1rem;
+    }
     .container .box_section_about .box_wrap .header__pj .qr_code {
         margin-bottom: 3rem;
         width: 100%;
