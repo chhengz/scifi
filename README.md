@@ -1,6 +1,6 @@
 # DEMO
 
-site: [click here](https://sokchheng.site/)
+site: [click here](https://sokchheng.site/home)
 ~~~
 ...
 ~~~
