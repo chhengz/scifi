@@ -1,5 +1,7 @@
 RewriteEngine on 
 
+DirectoryIndex home.html index.php
+
 
 #redirect /file.php to /file
 RewriteCond %{THE_REQUEST} \s/([^.]+)\.php [NC]
@@ -17,4 +19,3 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)/?$ /$1.html  [L]
 
 
-DirectoryIndex home.html index.php
