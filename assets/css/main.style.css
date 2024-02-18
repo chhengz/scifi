@@ -16,6 +16,7 @@
 ::selection {
     color: gold;
 }
+
 ::-webkit-scrollbar {
     /*  */
 }
@@ -71,8 +72,8 @@ body {
     font-family: Ranger;
     text-transform: uppercase;
     background: -webkit-linear-gradient(90deg, #ff53cb, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: var(--transition-text-fast);
 }
 
@@ -105,7 +106,7 @@ body {
 .container header .menuBox li a:hover {
     transform: translateX(15px);
     text-transform: lowercase;
-    text-shadow: 0 0 20px  rgb(0, 238, 255);
+    text-shadow: 0 0 20px rgb(0, 238, 255);
     /* box-shadow: 50px 10px 0 0 rgb(255, 255, 255); */
     border-radius: 10px;
 
@@ -120,23 +121,27 @@ body {
     width: 100%;
     height: 100%;
 }
-.container .main_page .text_header{
+
+.container .main_page .text_header {
     width: 100%;
 }
-.container .main_page .text_header .wrapper_content{
+
+.container .main_page .text_header .wrapper_content {
     width: 100%;
 }
-.container .main_page .text_header .wrapper_content .welcome{
+
+.container .main_page .text_header .wrapper_content .welcome {
     text-align: center;
     font-size: 7em;
     font-family: Hacker;
     background: url("https://th.bing.com/th/id/R.bc5551ac237a9ef4d8e9575662f2e106?rik=WtgaoqXGKXJ5RA&pid=ImgRaw&r=0") center repeat;
-    background-size: cover;
+    background-size: cover cover;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-.container .main_page .text_header .wrapper_content p{
+
+.container .main_page .text_header .wrapper_content p {
     text-align: center;
     color: whitesmoke;
     font-size: 1em;
@@ -161,37 +166,42 @@ footer {
     /* background-color: rgb(7, 15, 20); */
     background: linear-gradient(0deg, rgb(7, 15, 20) 60%, rgba(0, 0, 0, 0));
 }
+
 footer section .wrap_content {
     display: flex;
     gap: 2em;
 }
+
 footer section .wrap_content .logo_wrap .logo_link_access {
     width: 100px;
     height: 100px;
-    background: url("https://static.vecteezy.com/system/resources/previews/004/463/621/non_2x/abstract-colorful-ornament-doodle-art-tiger-illustration-cartoon-concept-suitable-for-wallpaper-clip-art-background-card-book-illustration-t-shirt-design-sticker-cover-etc-vector.jpg") no-repeat;
+    background: url("https://static.vecteezy.com/system/resources/previews/004/463/621/non_2x/abstract-colorful-ornament-doodle-art-tiger-illustration-cartoon-concept-suitable-for-wallpaper-clip-art-background-card-book-illustration-t-shirt-design-sticker-cover-etc-vector.jpg") center no-repeat;
     background-size: 100% 100%;
     border-radius: 1rem;
     border: 3px solid white;
 }
+
 footer section .wrap_content .link_list {
     margin-top: .8rem;
     display: flex;
 }
 
-footer section .wrap_content .link_list ul li{
+footer section .wrap_content .link_list ul li {
     display: block;
     list-style-type: circle;
     margin-bottom: .5rem;
     margin-right: 2rem;
 }
-footer section .wrap_content .link_list ul li a{
+
+footer section .wrap_content .link_list ul li a {
     display: block;
     color: white;
     font-size: 1.1rem;
     opacity: 90%;
     transition: var(--transition-text-fast);
 }
-footer section .wrap_content .link_list ul li a:hover{
+
+footer section .wrap_content .link_list ul li a:hover {
     text-decoration: underline;
     transform: translateX(10px);
 }
@@ -199,16 +209,17 @@ footer section .wrap_content .link_list ul li a:hover{
 /* =============== ABOUT =============== */
 
 .middle_line_sm {
-    margin: 1rem auto;
+    margin: 2em auto;
     width: 200px;
     height: 5px;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 0), rgb(39, 248, 255), rgba(0, 0, 0, 0));
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(39, 248, 255), rgba(0, 0, 0, 0));
     border-radius: 1rem;
 }
 
 .container .about_main_page {
     padding: 1.5em;
 }
+
 .container .about_main_page .back_home_btn {
     position: fixed;
     float: left;
@@ -216,7 +227,8 @@ footer section .wrap_content .link_list ul li a:hover{
     left: 1.5em;
     z-index: 10;
 }
-.container .about_main_page .back_home_btn a{
+
+.container .about_main_page .back_home_btn a {
     display: block;
     padding: .5rem 1.2rem;
     color: white;
@@ -228,9 +240,10 @@ footer section .wrap_content .link_list ul li a:hover{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
     transition: var(--transition-text-fast);
 }
+
 .container .about_main_page .back_home_btn a:hover {
     color: #25ffe2;
-    text-shadow: 0 0 20px  rgba(225, 225, 255, 0.75);
+    text-shadow: 0 0 20px rgba(225, 225, 255, 0.75);
     /* border: 2px solid rgba(225, 225, 225, 0.50); */
     /* box-shadow: 0 0 5px rgba(56, 199, 255, 0.25); */
 }
@@ -253,44 +266,49 @@ footer section .wrap_content .link_list ul li a:hover{
     width: 100%;
 }
 
-.container .box_section_about .box_wrap .header_intro{
+.container .box_section_about .box_wrap .header_intro {
     margin: auto;
     width: 75%;
     display: flex;
     gap: 1rem;
 }
-.container .box_section_about .box_wrap .header_intro .introduce_text_box{
+
+.container .box_section_about .box_wrap .header_intro .introduce_text_box {
     width: 100%;
     margin-top: 2rem;
     padding: 2rem;
     /* background-color: #000; */
 }
-.container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box h1{
+
+.container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box h1 {
     color: white;
     font-size: 1.8rem;
     /* text-wrap: nowrap; */
     /* font-family: ; */
 }
+
 .container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box .name_color {
     color: red;
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 10px;
 }
-.container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box p{
+
+.container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box p {
     margin-top: .5rem;
     color: rgba(255, 255, 255, 0.95);
     font-size: 1rem
-    /* font-family: ; */
+        /* font-family: ; */
 }
 
 /* -----  image ----- */
-.container .box_section_about .box_wrap .cover_image_box{
+.container .box_section_about .box_wrap .cover_image_box {
     width: 100%;
     display: flex;
     /* align-items: center; */
     justify-content: center;
 }
-.container .box_section_about .box_wrap .cover_image{
+
+.container .box_section_about .box_wrap .cover_image {
     width: 300px;
     height: 300px;
     background: url("https://static.vecteezy.com/system/resources/previews/004/463/621/non_2x/abstract-colorful-ornament-doodle-art-tiger-illustration-cartoon-concept-suitable-for-wallpaper-clip-art-background-card-book-illustration-t-shirt-design-sticker-cover-etc-vector.jpg") no-repeat;
@@ -298,6 +316,52 @@ footer section .wrap_content .link_list ul li a:hover{
     border-radius: 1rem;
     border: 3px solid white;
 }
+
+.container .box_section_about .box_wrap .body_intro {
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.container .box_section_about .box_wrap .body_intro .background_story_main_box {
+    width: 100%;
+}
+
+.container .box_section_about .box_wrap .body_intro .background_story_main_box ul {
+    width: 100%;
+}
+
+.container .box_section_about .box_wrap .body_intro .background_story_main_box ul li {
+    display: block;
+    width: 100%;
+}
+
+.container .box_section_about .box_wrap .body_intro .background_story_main_box ul li .text_header_top {
+    /* width: 100%; */
+    margin: .5rem 0;
+    /* padding: .5rem; */
+    /* background-color: rgba(225, 225, 255, 0.25); */
+    /* border-bottom: 2px solid rgba(225, 225, 255, 0.25); */
+    /* border-radius: .8rem; */
+}
+
+.container .box_section_about .box_wrap .body_intro .background_story_main_box ul li .text_header_top h1 {
+    text-align: center;
+}
+
+.container .box_section_about .box_wrap .body_intro .background_story_main_box ul li .cover_image_box_2 {
+    margin: 1rem auto;
+    border: 2px solid white;
+    width: 70%;
+    height: 200px;
+    border-radius: .8rem;
+}
+
+.container .box_section_about .box_wrap .body_intro .background_story_main_box ul li .cover_image_box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .box_section_about .box_wrap .body_intro .background_story_main_box ul li .text_deteil {}
 
 /* =============== PROJECT =============== */
 .container .box_section_about .box_wrap .header__pj {
@@ -313,7 +377,7 @@ footer section .wrap_content .link_list ul li a:hover{
     width: 300px;
 }
 
-.container .box_section_about .box_wrap .header__pj .qr_code img{
+.container .box_section_about .box_wrap .header__pj .qr_code img {
     margin-bottom: 3rem;
     width: 100%;
     object-fit: contain;
@@ -329,11 +393,17 @@ footer section .wrap_content .link_list ul li a:hover{
         background-position: center;
         background-size: cover contain;
     }
-    
+
     .container header {
         top: 50%;
         left: 40%;
         transform: translate(0, -50%);
+    }
+
+    /* =============== ABOUT =============== */
+    .container .box_section_about .box_wrap .header_intro {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
@@ -342,42 +412,69 @@ footer section .wrap_content .link_list ul li a:hover{
         background-position: center;
         background-size: 200% 100%;
     }
-    .container .main_page .text_header{
+
+    .container .main_page .text_header {
         margin-top: 3em;
     }
 
     /* =============== ABOUT =============== */
-    .container .box_section_about .box_wrap .cover_image{
+    .middle_line_sm {
+        margin: 1.5rem auto;
+    }
+
+    .container .box_section_about .box_wrap .cover_image {
         width: 150px;
         height: 150px;
     }
-    .container .box_section_about .box_wrap .header_intro{
+
+    .container .box_section_about .box_wrap .header_intro {
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
     }
-    .container .box_section_about .box_wrap .header_intro .introduce_text_box{
-        width: 100%;
+
+    .container .box_section_about .box_wrap .header_intro .introduce_text_box {
+        padding: 1rem;
         margin-top: 0;
     }
-    .container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box .name_color {
+
+    .container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box h1 {
         text-align: center;
     }
-    .container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box p{
+
+    .container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box .name_color {
+        font-size: 2rem;
+    }
+
+    .container .box_section_about .box_wrap .header_intro .introduce_text_box .text_box p {
         text-align: center;
     }
 
     /* ----- image ----- */
-    .container .box_section_about .box_wrap .cover_image_box{
-       margin-top: 2rem;
+    .container .box_section_about .box_wrap .cover_image_box {
+        margin-top: 2rem;
+    }
+
+    /* ---------------------- */
+    .container .box_section_about .box_wrap .body_intro .background_story_main_box ul li .cover_image_box_2 {
+        width: 100%;
     }
 
     /* =============== PROJECT =============== */
     .container .box_section_about .box_wrap .header__pj {
         padding: 1rem;
     }
+
+    .container .box_section_about .box_wrap .header__pj h1 {
+        width: 100%;
+        text-align: center;
+    }
+
     .container .box_section_about .box_wrap .header__pj .qr_code {
-        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    .container .box_section_about .box_wrap .header__pj .qr_code img {
         width: 100%;
     }
 }
